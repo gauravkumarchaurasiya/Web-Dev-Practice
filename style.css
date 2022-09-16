@@ -94,6 +94,9 @@ footer {
   background-color: #000;
   color: white;
   height: 32vh;
+  display: flex;
+  justify-content: space-around;
+  
 }
 footer a {
   color: white;
@@ -106,4 +109,21 @@ footer .box4 .contact {
 }
 footer .box5{
     padding-top: 5rem;
+}
+
+/* ###### RESPONSIVE NESS #### */
+@media screen and (max-width : 720px){
+  .sect-2{
+    height: 200vh;
+    grid-template-columns: 1fr;
+  }
+  footer{
+    display: grid;
+  height: 70vh;
+  grid-template-columns: repeat(2,1fr);
+  place-content: center;
+  justify-content: center;
+  grid-gap: 2rem;
+
+  }
 }
